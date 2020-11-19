@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   
   <title>Weather Dashboard</title>
 </head>
@@ -23,16 +23,16 @@
       <aside class="col-lg-3 bg-light">
         <h5 class="mt-1">Search for a City:</h5>
         <div class="form-inline form-group">
-          <input class="form-control" type="text" id="search-value" />
+          <input class="form-control" type="text" id="search-value" placeholder="Enter a City Name" />
           <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button>
         </div>
-
+          <!-- Holds the history of the City Search -->
         <ul class="list-group history"></ul>
       </aside>
 
       <div class="col-lg-9">
         <div id="today" class="mt-3"></div>
-        <div id="forecast" class="mt-3"></div>
+        <div id="forecast" class="mt-4"></div>
       </div>
     </div>
   </div>
