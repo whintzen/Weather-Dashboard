@@ -1,4 +1,4 @@
-
+// This App uses a Weather API and it also inserts HTML elements into the HTML file
 
 $(document).ready(function() {
     // When the searchbutton is clicked
@@ -17,11 +17,11 @@ $(document).ready(function() {
   });
 
       //Make a row to store entry of each city
-  function makeRow(text) {
+  function makeNewRow(text) {
     var li = $("<li>").addClass("list-group-item list-group-item-action").text(text);
     $(".history").append(li);
   }
-
+      //As a city is entered in the search box, call the openweathermap API 
   function cityWeatherSearch(searchValue) {
     $.ajax({
       type: "GET",      
@@ -33,7 +33,7 @@ $(document).ready(function() {
           history.push(searchValue);
           window.localStorage.setItem("history", JSON.stringify(history));
     
-          makeRow(searchValue);
+          makeNewRow(searchValue);
         }
         
         // clear any old content
@@ -60,7 +60,7 @@ $(document).ready(function() {
       }
     });
   }
-  
+    // Get the forcast for 5 days
   function getForecast(searchValue) {
     $.ajax({
       type: "GET",
@@ -76,7 +76,7 @@ $(document).ready(function() {
           if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
             // create html elements for a bootstrap card
             var col = $("<div>").addClass("col-md-2");
-            var card = $("<div>").addClass("card bg-primary text-white");
+            var card = $("<div>").addClass("card bg-primary text-green");
             var body = $("<div>").addClass("card-body p-2");
 
             var title = $("<h5>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
@@ -94,7 +94,7 @@ $(document).ready(function() {
       }
     });
   }
-
+      //Get the UVIndex information
   function getUVIndex(lat, lon) {
     $.ajax({
       type: "GET",
@@ -128,6 +128,6 @@ $(document).ready(function() {
   }
 
   for (var i = 0; i < history.length; i++) {
-    makeRow(history[i]);
+    makeNewRow(history[i]);
   }
 });
