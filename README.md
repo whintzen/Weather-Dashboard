@@ -1,4 +1,4 @@
-# 06 Server-Side APIs: Weather Dashboard
+# :open_umbrella: 06 Server-Side APIs: Weather Dashboard  :closed_umbrella:
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
