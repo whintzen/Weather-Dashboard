@@ -1,0 +1,50 @@
+body {
+    background-color: lightcyan;
+}
+
+h1 {
+    margin-bottom: 0%;
+    background-image: linear-gradient(to right, rgb(84, 165, 231), rgb(150, 179, 223));
+}
+
+.bg-light {
+    background-color:lightgrey!important;
+
+}
+.btn-primary {
+    background-color: aqua;
+    border-color: black;
+}
+
+h3 {
+    font-size: 1.50rem;
+}
+
+.card {
+    background-color:cyan;
+    
+}
+
+.card-body {
+    padding-top: 0; 
+}
+
+/* .p-2 {
+    padding: 0;
+} */
+
+/* .city-name {
+    font-size: 30px;
+} */
+
+.forecast-date {
+    font-size: 18px;
+}
+
+#forecast {
+    /* position: absolute; */
+    position: relative;
+
+    left:  5%;
+}
+
