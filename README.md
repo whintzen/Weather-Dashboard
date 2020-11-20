@@ -10,9 +10,9 @@ Developers are often tasked with retrieving data from another application's API 
 
 ## Table of Contents
 
-* [User Story](#userstory)
+* [User Story](#user-story)
 
-* [Acceptance Criteria](#acceptancecriteria)
+* [Acceptance Criteria](#acceptance-criteria)
 
 * [Instructions](#instructions)
 
@@ -27,13 +27,16 @@ Developers are often tasked with retrieving data from another application's API 
 * [Questions](#questions)
 
 ## User Story
+
 ```
 AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
+
 ```
 
 ## Acceptance Criteria 
+
 ```
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
@@ -48,6 +51,7 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
+
 ```
 
 ## Instructions
